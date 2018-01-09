@@ -13,6 +13,13 @@
     </div>
   </div>
 
+  <% if user_signed_in? %>
+    <div id="admin_links">
+      <%= link_to "Edit Project", edit_project_path(@project) %>
+      <%= link_to "Delete Project", project_path(@project), method: :delete, data: { confirm: "Are you sure?" } %>
+    </div>
+  <% end %>
+
   <hr>
 
   <div class="share_box">
@@ -24,8 +31,5 @@
     <a onclick="javascript:window.open('http://www.facebook.com/sharer.php?u=<%= url_for([@project, {only_path: false}]) %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
     <i class="fa fa-facebook"></i></a>
   </div>
-
-  <%= link_to "Edit project", edit_project_path(@project) %>
-  <%= link_to "Delete project", project_path(@project), method: :delete, data: { confirm: "Are you sure you want to delete this project?" } %>
 
 </div>
