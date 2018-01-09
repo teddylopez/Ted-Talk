@@ -1,0 +1,30 @@
+<div class="wrapper wrapper_padding clearfix">
+  <div class="col-1 about homepage_content">
+    <h2>About</h2>
+    <hr>
+    <p>My name is Ted López.</p>
+    <p>I am a designer and developer.</p>
+    <p>I started learning how to code in my spare time after work, and then later enrolled in the website development course offered by <a href="www.bloc.io">Bloc</a>.</p>
+  </div>
+  <div class="col-2 homepage_content">
+    <h2>Stuff I've written</h2>
+    <hr>
+    <% @posts.each do |post| %>
+      <h3><%= link_to post.title, post %></h3>
+      <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+    <% end %>
+
+  </div>
+  <div class="col-3 homepage_content">
+    <h2>Stuff I've Built</h2>
+    <hr>
+    <h3><a href="#">teddit</a></h3>
+    <p class="date">Friday, February 2, 2018</p>
+    <h3><a href="#">noted</a></h3>
+    <p class="date">Friday, February 2, 2018</p>
+    <h3><a href="#">bloc-jams</a></h3>
+    <p class="date">Friday, February 2, 2018</p>
+    <h3><a href="#">pinboard</a></h3>
+    <p class="date">Friday, February 2, 2018</p>
+  </div>
+</div>
