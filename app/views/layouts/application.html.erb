@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Portfolio</title>
-    <%= csrf_meta_tags %>
-
+    <title>Ted Talk</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <header id="main_navigation" class="clearfix">
+      <a href="index.html" class="name">Ted López</a>
+      <nav>
+        <%= link_to "Articles", posts_path %>
+        <a href="#">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
     <%= yield %>
   </body>
 </html>
