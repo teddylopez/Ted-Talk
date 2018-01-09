@@ -18,13 +18,8 @@
   <div class="col-3 homepage_content">
     <h2>Stuff I've Built</h2>
     <hr>
-    <h3><a href="#">teddit</a></h3>
-    <p class="date">Friday, February 2, 2018</p>
-    <h3><a href="#">noted</a></h3>
-    <p class="date">Friday, February 2, 2018</p>
-    <h3><a href="#">bloc-jams</a></h3>
-    <p class="date">Friday, February 2, 2018</p>
-    <h3><a href="#">pinboard</a></h3>
-    <p class="date">Friday, February 2, 2018</p>
+      <% @projects.each do |project| %>
+        <h3><%= link_to project.title, project %></h3>
+        <p class="date"><%= project.created_at.strftime("%A, %B %d") %></p>
+      <% end %>
   </div>
-</div>
