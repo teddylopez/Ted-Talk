@@ -7,7 +7,7 @@
     <p>I started teaching myself how to code after work, and then later enrolled in the website development course offered by <a href="https://www.bloc.io">Bloc</a>. I made this site so that I can write about my work and the progress I've made as a developer.</p>
   </div>
   <div class="col-2 homepage_content">
-    <h2>Stuff I've written</h2>
+    <h2>My Posts</h2>
     <hr>
     <% @posts.each do |post| %>
       <h3><%= link_to post.title, post %></h3>
@@ -16,7 +16,7 @@
 
   </div>
   <div class="col-3 homepage_content">
-    <h2>Stuff I've Built</h2>
+    <h2>My Projects</h2>
     <hr>
       <% @projects.each do |project| %>
         <h3><%= link_to project.title, project %></h3>
