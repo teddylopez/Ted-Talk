@@ -91,6 +91,8 @@ hr {
 }
 
 #main_navigation {
+  position: relative;
+  z-index: 30;
   padding: 2.5rem 5%;
   border-bottom: 1px solid $border;
   background-color: white;
@@ -126,9 +128,10 @@ hr {
 }
 
 #main_footer {
+  position: relative;
+  z-index: 20;
   padding: 2.5em 5%;
   border-top: 1px solid $border;
-  z-index: -1;
   background-color: white;
   .copyright {
     float: left;

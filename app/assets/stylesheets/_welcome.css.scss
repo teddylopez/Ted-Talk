@@ -28,7 +28,7 @@
   h3 {
     font-size: 1.35em;
     font-weight: 400;
-    margin-bottom: .5em
+    margin-bottom: .5em;
   }
 
   a {
@@ -52,7 +52,7 @@
     height: 100%;
     width: 200px;
     position: fixed;
-    z-index: -1;
+    z-index: 1;
     top: 0;
     left: 0;
     background-color: #4285F4;
@@ -66,6 +66,7 @@
     font-size: 25px;
     color: #818181;
     display: block;
+    cursor: pointer;
 }
 
 .sidenav a:hover {
@@ -74,6 +75,9 @@
 
 .main {
     margin-left: 200px; /* Same as the width of the sidenav */
+    h3, h4, h6 {
+      text-transform: uppercase;
+    }
 }
 
 @media screen and (max-height: 450px) {
@@ -92,21 +96,58 @@
     text-decoration: none;
     color: #424652;
   }
+  ul {
+    padding: 0;
+  }
   li {
     display: inline-block;
   }
 }
 
-.experience {
+.subhead {
+  color: #bdbdbd;
+  margin: 5px;
+}
+
+.desc {
+  width: 80%;
+}
+
+.align {
+  h3 {
+  text-align: left;
+  display: inline;
+  }
+  p {
+    float: right;
+    margin-right: 1rem;
+    display: inline-block;
+  }
+}
+
+.section {
+  border-bottom: 1px solid #E9E9E9;
+  p {
+    line-height: 1.7;
+  }
+}
+
+.experience, .education, .skills {
 	padding-top: 20%;
-	padding-bottom: 50%;
-	padding-left: 5%;
+	padding-bottom: 20%;
 }
 
 .items {
 	padding-top: 400px;
   a {
     color: white;
+  }
+}
+
+.icons {
+  margin-top: 2rem;
+  i {
+    font-size: 4rem;
   }
 }
 
