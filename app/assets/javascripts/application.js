@@ -14,7 +14,7 @@
 //= require turbolinks
 //= require_tree .
 
-$(document).ready(function(){
+$(document).on('turbolinks:load', (function(){
 	$('a[href^="#"]').on('click',function (e) {
 	    e.preventDefault();
 
