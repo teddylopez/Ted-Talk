@@ -2,7 +2,7 @@
 
 $dark: #424652;
 $light: #9a9da4;
-$highlight: #8bc6db;
+$highlight: #4285F4;
 $border: #E9E9E9;
 
 * {
@@ -86,13 +86,14 @@ hr {
   display: block;
   height: 2px;
   border: 0;
-  border-top: 2px solid #8bc6db;
+  border-top: 2px solid #4285F4;
   margin: 2rem 0;
 }
 
 #main_navigation {
   padding: 2.5rem 5%;
   border-bottom: 1px solid $border;
+  background-color: white;
   .name {
     font-weight: 700;
     font-size: .85em;
@@ -127,6 +128,8 @@ hr {
 #main_footer {
   padding: 2.5em 5%;
   border-top: 1px solid $border;
+  z-index: -1;
+  background-color: white;
   .copyright {
     float: left;
     font-size: .9em;

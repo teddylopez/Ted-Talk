@@ -14,7 +14,7 @@
         text-decoration: none;
         color: #424652;
         &:hover {
-          color: #8bc6db;
+          color: #4285F4;
         }
       }
     }
@@ -74,7 +74,7 @@
     color: #424652;
     padding: 1em 1.5em;
     &:hover {
-      color: #8bc6db;
+      color: #4285F4;
       cursor: pointer;
     }
   }
@@ -124,12 +124,12 @@
     font-size: normal;
     color: #424652;
     &:hover {
-      background: #8bc6db;
+      background: #4285F4;
       color: #FFFFFF;
     }
   }
   .current {
-    background: #8bc6db;
+    background: #4285F4;
     color: #FFFFFF;
   }
   .disabled {
