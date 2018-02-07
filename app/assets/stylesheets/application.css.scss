@@ -11,6 +11,7 @@ $border: #E9E9E9;
 
 body {
   font-family: 'Raleway', sans-serif;
+  height: 100%;
 }
 
 .notice, .alert {
@@ -22,6 +23,7 @@ body {
 .wrapper {
   width: 90%;
   margin: 0 auto;
+  padding-bottom: 100px;
 }
 
 .skinny_wrapper {
@@ -32,6 +34,7 @@ body {
 
 .wrapper_padding {
   padding: 4rem 0;
+  padding-bottom: 100px;
 }
 
 .clearfix:before,
@@ -128,12 +131,15 @@ hr {
 }
 
 #main_footer {
-  position: relative;
+  position: absolute;
+  height: 120px;
+  width: 100%;
   z-index: 20;
   padding: 2.5em 5%;
   border-top: 1px solid $border;
   background-color: white;
   .copyright {
+    padding-top: 7px;
     float: left;
     font-size: .9em;
     margin: 0;

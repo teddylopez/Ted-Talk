@@ -103,6 +103,13 @@
   }
 }
 
+.pic {
+  padding-left: 20px;
+  img {
+    border-radius: 3px;
+  }
+}
+
 .subhead {
   color: #bdbdbd;
   margin: 5px;
@@ -133,7 +140,7 @@
 }
 
 .items {
-	padding-top: 400px;
+	padding-top: 100%;
   a {
     color: white;
   }
