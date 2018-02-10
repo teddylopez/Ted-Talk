@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :posts
+  resources :posts, :path => 'articles'
   resources :projects
   resources :contacts, only: [:new, :create]
   get 'welcome/index'
