@@ -16,10 +16,10 @@
     <header id="main_navigation" class="clearfix">
       <%= link_to "TedLópez", root_path, class: "name" %>
       <nav>
-        <%= link_to "Articles", posts_path %>
-        <%= link_to "Projects", projects_path %>
-        <%= link_to "Contact", new_contact_path %>
-        <%= link_to "About Me", welcome_about_path %>
+        <a href="/articles" onclick="blocmetrics.report('Articles link clicked')">Articles</a>
+        <a href="/projects" onclick="blocmetrics.report('Projects link clicked')">Projects</a>
+        <a href="/contacts/new" onclick="blocmetrics.report('Contact link clicked')">Contact</a>
+        <a href="/welcome/about" onclick="blocmetrics.report('About Me link clicked')">About Me</a>
         <% if user_signed_in? %>
           <%= link_to "Sign Out", destroy_user_session_path(@user), method: :delete %>
         <% end %>
@@ -39,7 +39,7 @@
       <p class="copyright">
         &copy; 2018 Ted López
         <nav>
-          <a href="http://github.com/teddylopez" target="_blank"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+          <a href="http://github.com/teddylopez" target="_blank" onclick="blocmetrics.report('Github link clicked')"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
         </nav>
       </p>
     </footer>
@@ -47,6 +47,6 @@
     <script>
       blocmetrics.report("test");
     </script>
-    
+
   </body>
 </html>
