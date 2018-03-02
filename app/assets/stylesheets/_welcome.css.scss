@@ -51,26 +51,25 @@
 }
 
 .sidenav {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #4285F4;
-    overflow-x: hidden;
-    padding-top: 20px;
-    -webkit-box-shadow: 2px 0px 16px 5px rgba(0,0,0,0.1);
-    box-shadow: 2px 0px 16px 5px rgba(0,0,0,0.1);
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #4285F4;
+  overflow-x: hidden;
+  padding-top: 20px;
+  -webkit-box-shadow: 2px 0px 16px 5px rgba(0,0,0,0.1);
+  box-shadow: 2px 0px 16px 5px rgba(0,0,0,0.1);
 }
 
 .sidenav a {
-    padding: 6px 6px 6px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    cursor: pointer;
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  cursor: pointer;
 }
 
 .sidenav a:hover {
@@ -78,15 +77,33 @@
 }
 
 .main {
-    margin-left: 200px; /* Same as the width of the sidenav */
     h3, h4, h6 {
       text-transform: uppercase;
     }
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+@media (min-width:1200px) {
+  .main {
+    padding-left: 20rem;
+  }
+}
+
+@media (min-width:992px) {
+  .main {
+    padding-left: 20rem;
+  }
+}
+
+@media (max-width:767px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width:768px) {
+  h1 {
+    font-size: 4rem;
+  }
 }
 
 .about-me {
@@ -168,6 +185,7 @@
 	padding-bottom: 15%;
   p {
     line-height: 1.7;
+    font-size: 1.5rem;
   }
 }
 
