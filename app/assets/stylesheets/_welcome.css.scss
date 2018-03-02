@@ -84,13 +84,21 @@
 
 @media (min-width:1200px) {
   .main {
-    padding-left: 20rem;
+    padding-left: 23rem;
+    margin-right: 8rem;
   }
 }
 
 @media (min-width:992px) {
   .main {
-    padding-left: 20rem;
+    padding-left: 23rem;
+    margin-right: 8rem;
+  }
+}
+
+@media(max-width:767px){
+  .main {
+    margin-right: 2rem;
   }
 }
 
@@ -201,12 +209,4 @@
 
 .last {
   margin-bottom: 12rem;
-}
-
-@media screen and (max-width:767px) {
-  .main {
-    width: 100%;
-    h1 {}
-  }
-
 }
