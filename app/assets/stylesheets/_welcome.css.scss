@@ -94,24 +94,6 @@
   }
 }
 
-@media (max-width:767px) {
-  h1 {
-    font-size: 4rem;
-  }
-  p {
-    font-size: 4rem;
-  }
-}
-
-@media (min-width:768px) {
-  h1 {
-    font-size: 4rem;
-  }
-  p {
-    font-size: 4rem;
-  }
-}
-
 .about-me {
 	padding-top: 2%;
 	padding-left: 5%;
@@ -219,4 +201,12 @@
 
 .last {
   margin-bottom: 12rem;
+}
+
+@media screen and (max-width:767px) {
+  .main {
+    width: 100%;
+    h1 {}
+  }
+
 }

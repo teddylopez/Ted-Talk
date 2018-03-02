@@ -32,7 +32,7 @@
         <a href="/articles" onclick="tedmetrics.report('Articles link clicked')">Articles</a>
         <a href="/projects" onclick="tedmetrics.report('Projects link clicked')">Projects</a>
         <a href="/contacts/new" onclick="tedmetrics.report('Contact link clicked')">Contact</a>
-        <a href="/welcome/about" onclick="tedmetrics.report('About Me link clicked')">About Me</a>
+        <a href="/welcome/about" onclick="tedmetrics.report('About Me link clicked')">About</a>
         <% if user_signed_in? %>
           <%= link_to "Sign Out", destroy_user_session_path(@user), method: :delete %>
         <% end %>
