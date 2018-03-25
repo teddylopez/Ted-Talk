@@ -1,15 +1,30 @@
-.col-1, .col-2, .col-3 {
-  float: left;
+
+/* Homepage and About-Me page styles */
+
+.welcome-container {
+  display: flex;
+  .home-about {
+    flex: 2;
+    order: 1;
+  }
+  .home-posts {
+    flex: 1;
+    order: 3;
+  }
+  .home-projects {
+    flex: 1;
+    order: 2;
+    margin-left: 2rem;
+  }
 }
 
-.col-1 {
-  width: 45%;
-  padding: 0 5% 0 2.5%;
-}
-
-.col-2, .col-3 {
-  width: 27.5%;
-  padding: 0 2.5%;
+@media(max-width:767px){
+  .welcome-container {
+    flex-direction: column;
+    .home-projects {
+      margin: 0;
+    }
+  }
 }
 
 .homepage_content {

@@ -1,7 +1,7 @@
 <div class="wrapper wrapper_padding clearfix">
-  <div class="row">
+  <div class="welcome-container">
 
-    <div class="col-xs-12 col-sm-6 col-med-6 col-lg-7 about homepage_content">
+    <div class="home-about homepage_content">
       <h2>About</h2>
       <hr>
       <p>My name is Ted López and this is my portfolio.</p>
@@ -9,7 +9,7 @@
       <p>Take a look around!</p>
     </div>
 
-    <div class="col-xs-12 col-sm-3 col-med-3 col-lg-2 homepage_content">
+    <div class="home-posts homepage_content">
       <h2>Latest Posts</h2>
       <hr>
       <% @posts.each do |post| %>
@@ -18,7 +18,7 @@
       <% end %>
 
     </div>
-    <div class="col-xs-12 col-sm-3 col-med-3 col-lg-2 homepage_content">
+    <div class="home-projects homepage_content">
       <h2>Latest Projects</h2>
       <hr>
         <% @projects.each do |project| %>
